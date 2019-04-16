@@ -63,38 +63,3 @@ console.log(person)
 /*Group the people by age. lodash*/
 const groupedByAge = lodash.groupBy(person, person => person.age);
 console.log(groupedByAge)
-
-
-
-/* for (let i = 0; i < person.length; i++) {
-     fs.writeFile('people.txt', `${person[i].name} is ${person[i].age}`, (err) => {
-         if (err) {
-             console.log(err)
-             return;
-         }
-         //console.log(allPeople)
-     })
- }*/
-
-
-
-const addToFile = () => {
-    for (let i = 0; i < person.length; i++) {
-        fs.writeFile('people.txt', `${person[i].name} is ${person[i].age}`, (err) => {
-            if (err) {
-                console.log(err)
-                return;
-            }
-            console.log('File Saved')
-        })
-        console.log(`${person[i].name} is ${person[i].age}`);
-    }
-}
-
-/*fs.writeFile('people.txt', 'Hey you', (err) => {
-    if (err) {
-        console.log(err);
-        return;
-    }
-    console.log('File saved');
-})*/
