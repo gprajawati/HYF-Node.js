@@ -1,4 +1,3 @@
-const fs = require('fs');
 const lodash = require('lodash');
 
 /*Create an array of objects {name: “”, age: “”}*/
