@@ -1,7 +1,7 @@
 const lodash = require('lodash');
 
 /*Create an array of objects {name: “”, age: “”}*/
-let person = [
+const person = [
 
     {
         name: "Jon Snow",
@@ -21,7 +21,7 @@ let person = [
     }
 ]
 
-let people = lodash.map(person, (myPeople) => {
+const people = lodash.map(person, (myPeople) => {
     console.log(myPeople)
 })
 
@@ -32,14 +32,14 @@ console.log(descAge)
 
 
 /*Find the oldest person. lodash*/
-let oldestPerson = lodash.maxBy(person, (maxAge) => {
+const oldestPerson = lodash.maxBy(person, (maxAge) => {
     return maxAge.age
 })
 console.log(oldestPerson)
 
 
 /*Find the youngest person. lodash*/
-let youngestPerson = lodash.minBy(person, (minAge) => {
+const youngestPerson = lodash.minBy(person, (minAge) => {
     return minAge.age
 })
 console.log(youngestPerson)
