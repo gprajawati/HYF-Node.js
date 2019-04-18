@@ -54,7 +54,7 @@ console.log(person)
 
 
 /*Group the people by age. lodash*/
-const groupedByAge = lodash.groupBy(person, person => person.age);
+const groupedByAge = lodash.groupBy(person, 'age');
 console.log(groupedByAge)
 
 
