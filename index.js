@@ -50,7 +50,6 @@ console.log(person)
 
 /*Add some objects to the array with the same age but different names*/
 const addPeople = person.push({ name: 'Joffrey Baratheon', age: 25 }, { name: 'Bran Stark', age: 25 }, { name: 'Khal Drogo', age: 40 }, { name: 'Theon Greyjoy', age: 30 }, { name: 'Jaime Lannister', age: 40 });
-console.log(addPeople[person])
 console.log(person)
 
 
