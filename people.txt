@@ -1,1 +1,9 @@
-Gita is 30022
+
+Jon Snow is 38
+Arya Stark is 28
+Joffrey Baratheon is 25
+Bran Stark is 25
+Daenerys Targaryen is 30
+Khal Drogo is 40
+Theon Greyjoy is 30
+Jaime Lannister is 40

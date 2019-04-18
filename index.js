@@ -1,7 +1,8 @@
 const lodash = require('lodash');
+const fs = require('fs')
 
 /*Create an array of objects {name: “”, age: “”}*/
-const person = [
+let person = [
 
     {
         name: "Jon Snow",
@@ -54,7 +55,7 @@ console.log(person)
 
 
 /*Add some objects to the array with the same age but different names*/
-const addPeople = person.push({ name: 'Joffrey Baratheon', age: 25 }, { name: 'Bran Stark', age: 25 }, { name: 'Khal Drogo', age: 40 }, {name: 'Theon Greyjoy', age: 30}, {name: 'Jaime Lannister', age: 40});
+const addPeople = person.push({ name: 'Joffrey Baratheon', age: 25 }, { name: 'Bran Stark', age: 25 }, { name: 'Khal Drogo', age: 40 }, { name: 'Theon Greyjoy', age: 30 }, { name: 'Jaime Lannister', age: 40 });
 console.log(addPeople[person])
 console.log(person)
 
@@ -62,3 +63,17 @@ console.log(person)
 /*Group the people by age. lodash*/
 const groupedByAge = lodash.groupBy(person, person => person.age);
 console.log(groupedByAge)
+
+
+/*(Challenge) Iterate through the array and add an entry to the file with every person in the array in the form: name is age*/
+const iteratePeps = person.forEach((i) => {
+        fs.appendFile('people.txt', `${i.name} is ${i.age}\n`, (err) => {
+            if (err) {
+                console.log(err)
+                return;
+            }
+        })
+        console.log(`${i.name} is ${i.age}`)
+})
+
+
