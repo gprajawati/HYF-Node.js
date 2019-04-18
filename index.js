@@ -67,7 +67,7 @@ console.log(groupedByAge)
 
 /*(Challenge) Iterate through the array and add an entry to the file with every person in the array in the form: name is age*/
 const iteratePeps = person.forEach((i) => {
-        fs.appendFile('people.txt', `${i.name} is ${i.age}\n`, (err) => {
+        fs.appendFile('people.txt',`${i.name} is ${i.age}\n`, (err) => {
             if (err) {
                 console.log(err)
                 return;
