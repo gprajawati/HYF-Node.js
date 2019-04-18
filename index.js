@@ -2,7 +2,7 @@ const lodash = require('lodash');
 const fs = require('fs')
 
 /*Create an array of objects {name: “”, age: “”}*/
-let person = [
+const person = [
 
     {
         name: "Jon Snow",
@@ -28,7 +28,7 @@ const people = lodash.map(person, (myPeople) => {
 
 
 /*Sort the array in a descending order based on the age. lodash*/
-const descAge = lodash.orderBy(person, ['age'], ['desc'])
+const descAge = lodash.orderBy(person, 'age', 'desc')
 console.log(descAge)
 
 
