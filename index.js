@@ -33,23 +33,17 @@ console.log(descAge)
 
 
 /*Find the oldest person. lodash*/
-const oldestPerson = lodash.maxBy(person, (maxAge) => {
-    return maxAge.age
-})
+const oldestPerson = lodash.maxBy(person, 'age')
 console.log(oldestPerson)
 
 
 /*Find the youngest person. lodash*/
-const youngestPerson = lodash.minBy(person, (minAge) => {
-    return minAge.age
-})
+const youngestPerson = lodash.minBy(person, 'age')
 console.log(youngestPerson)
 
 
 /*Remove the oldest person from the array. lodash*/
-const removeTheOldest = lodash.remove(person, (removeOldPerson) => {
-    return removeOldPerson === oldestPerson;
-});
+const removeTheOldest = lodash.remove(person, oldestPerson)
 console.log(removeTheOldest)
 console.log(person)
 
